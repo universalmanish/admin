@@ -1,6 +1,6 @@
 import { SimpleForm, Edit, TextInput, required } from "react-admin";
 
-export const CourseEdit = () => {
+export const SubjectEdit = () => {
   return (
     <Edit>
       <SimpleForm>
@@ -12,12 +12,17 @@ export const CourseEdit = () => {
         <TextInput 
           source="title" 
           validate={[required()]} 
-          label="Title"
+          label="Subject Name"
         />
         <TextInput 
-          source="imageSrc" 
+          source="route" 
           validate={[required()]} 
-          label="Image"
+          label="Route"
+        />
+        <TextInput 
+          source="imageUrl" 
+          validate={[required()]} 
+          label="Image Url"
         />
       </SimpleForm>
     </Edit>
