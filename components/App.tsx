@@ -12,6 +12,10 @@ import { LevelCreate } from "@/app/level/create";
 import { LevelEdit } from "@/app/level/edit";
 import { LevelList } from "@/app/level/list";
 
+import { SubHeadingCreate } from "@/app/subHeading/create";
+import { SubHeadingEdit } from "@/app/subHeading/edit";
+import { SubHeadingList } from "@/app/subHeading/list";
+
 import { SubjectCreate } from "@/app/subjects/create";
 import { SubjectEdit } from "@/app/subjects/edit";
 import { SubjectList } from "@/app/subjects/list";
@@ -51,6 +55,13 @@ const App = () => {
                 list={HeadingList}
                 create={HeadingCreate}
                 edit={HeadingEdit}
+                recordRepresentation="title"
+            />
+            <Resource
+                name="subHeading"
+                list={SubHeadingList}
+                create={SubHeadingCreate}
+                edit={SubHeadingEdit}
                 recordRepresentation="title"
             />
         </Admin>
