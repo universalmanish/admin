@@ -7,7 +7,8 @@ export const BranchList = () => {
         <TextField source="id" />
         <TextField source="title" />
         <TextField source="route" />
-        <TextField source="imageSrc" />
+        <TextField source="image_url" />
+        <TextField source="subject_id" />
       </Datagrid>
     </List>
   );

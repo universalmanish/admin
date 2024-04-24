@@ -1,8 +1,7 @@
 "use client"
+import { BranchCreate } from "@/app/branch/create";
+import { BranchEdit } from "@/app/branch/edit";
 import { BranchList } from "@/app/branch/list";
-import { HeadingList } from "@/app/heading/list";
-import { LevelList } from "@/app/level/list";
-import { SubHeadingList } from "@/app/subheading/list";
 
 import { SubjectCreate } from "@/app/subjects/create";
 import { SubjectEdit } from "@/app/subjects/edit";
@@ -27,21 +26,8 @@ const App = () => {
             <Resource
                 name="branch"
                 list={BranchList}
-                recordRepresentation="title"
-            />
-            <Resource
-                name="level"
-                list={LevelList}
-                recordRepresentation="title"
-            />
-            <Resource
-                name="heading"
-                list={HeadingList}
-                recordRepresentation="title"
-            />
-            <Resource
-                name="subheading"
-                list={SubHeadingList}
+                create={BranchCreate}
+                edit={BranchEdit}
                 recordRepresentation="title"
             />
         </Admin>
