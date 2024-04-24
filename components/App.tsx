@@ -3,6 +3,11 @@
 import { BranchCreate } from "@/app/branch/create";
 import { BranchEdit } from "@/app/branch/edit";
 import { BranchList } from "@/app/branch/list";
+
+import { HeadingCreate } from "@/app/heading/create";
+import { HeadingEdit } from "@/app/heading/edit";
+import { HeadingList } from "@/app/heading/list";
+
 import { LevelCreate } from "@/app/level/create";
 import { LevelEdit } from "@/app/level/edit";
 import { LevelList } from "@/app/level/list";
@@ -39,6 +44,13 @@ const App = () => {
                 list={LevelList}
                 create={LevelCreate}
                 edit={LevelEdit}
+                recordRepresentation="title"
+            />
+            <Resource
+                name="heading"
+                list={HeadingList}
+                create={HeadingCreate}
+                edit={HeadingEdit}
                 recordRepresentation="title"
             />
         </Admin>
