@@ -1,7 +1,4 @@
 "use client"
-import { BranchCreate } from "@/app/branch/create";
-import { BranchEdit } from "@/app/branch/edit";
-import { BranchList } from "@/app/branch/list";
 
 import { SubjectCreate } from "@/app/subjects/create";
 import { SubjectEdit } from "@/app/subjects/edit";
@@ -23,13 +20,13 @@ const App = () => {
                 edit={SubjectEdit}
                 recordRepresentation="title"
             />
-            <Resource
+            {/* <Resource
                 name="branch"
                 list={BranchList}
                 create={BranchCreate}
                 edit={BranchEdit}
                 recordRepresentation="title"
-            />
+            /> */}
         </Admin>
     )
 }

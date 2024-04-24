@@ -16,8 +16,8 @@ export const SubjectCreate = () => {
         />
         <TextInput 
           source="imageUrl" 
-          validate={[required()]} 
-          label="Image"
+          // validate={[required()]} 
+          label="Image Url"
         />
       </SimpleForm>
     </Create>

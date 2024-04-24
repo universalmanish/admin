@@ -7,7 +7,7 @@ export const SubjectList = () => {
         <TextField source="id" />
         <TextField source="title" />
         <TextField source="route" />
-        <TextField source="imageSrc" />
+        <TextField source="imageUrl" />
       </Datagrid>
     </List>
   );

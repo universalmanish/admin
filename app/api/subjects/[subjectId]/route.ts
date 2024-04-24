@@ -16,10 +16,10 @@ export const PUT = async (req: Request, {params}: {params: {subjectId: number}})
         ...body,
     }).where(eq(subject.id, params.subjectId)).returning()
 
-    return NextResponse.json(data)
+    return NextResponse.json(data[0])
 }
 
 export const DELETE = async (req: Request, {params}: {params: {subjectId: number}}) => {
     const data = await db.delete(subject).where(eq(subject.id, params.subjectId)).returning()
-    return NextResponse.json(data)
+    return NextResponse.json(data[0])
 }
